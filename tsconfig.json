@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "module": "none",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "downlevelIteration": true,
+    "outFile": "./build/build.js",
+    "sourceRoot": "./sketch/",
+    "rootDir": "./sketch/"
+  }
+}
