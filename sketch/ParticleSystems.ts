@@ -14,7 +14,6 @@ class ParticleSystem {
     background(31, 31, 28);
     this.particles.forEach(function(element) {
       element.run();
-      background(1);
     });
   }
 }
