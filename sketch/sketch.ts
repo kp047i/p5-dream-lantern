@@ -1,19 +1,19 @@
-let colors: p5.Color[];
-let ps: ParticleSystem;
+const ps: ParticleSystem = new ParticleSystem();
+const maxParticles = 15;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   blendMode(ADD);
-  ps = new ParticleSystem();
+  imageMode(CENTER);
   noStroke();
 }
 
 function draw() {
   background(31, 31, 28);
-  rect(30, 20, 55, 55);
-  ps.runParticles();
-  if (ps.particles.length < 3) {
+  if (ps.particles.length < maxParticles) {
     ps.addParticle();
   }
+  ps.runParticles();
 }
 
 function windowResized() {
